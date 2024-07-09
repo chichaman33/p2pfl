@@ -16,6 +16,7 @@ jobs:
       - name: Install dependencies (poetry)
         run: |
           pip install poetry
+          python -m poetry lock --no-update
           python -m poetry install
 
       - name: Format (ruff)
